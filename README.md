@@ -1,3 +1,14 @@
+# Introducción al Desarrollo Web
+
+
+Tecnicatura Universitaria en Desarrollo Web - Universidad Nacional de Entre Ríos
+
+Integrantes:
+- Basteiro, Abril
+- Natarelli, Candela
+- Sandoval, Diana
+
+***
 # API de Alojamientos
 
 Esta API permite gestionar alojamientos, como casas, apartamentos, hoteles, etc.
