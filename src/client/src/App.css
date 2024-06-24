@@ -39,6 +39,7 @@ header {
 
 nav ul {
   list-style-type: none;
+  margin-bottom: 0;
 }
 
 nav ul li a,
@@ -54,9 +55,24 @@ nav ul li a:hover {
 
 .listItem {
   float: left;
-  margin: auto 40px;
+  margin: auto 10px;
   font-weight: bold;
   font-size: 18px;
+  padding: 2px 20px;
+}
+
+.adminBtn {
+  border: 1px solid currentColor;
+  border-radius: 50px;
+  color: #1A84CB;
+}
+
+.adminBtn a {
+  color: #1A84CB;
+}
+
+.adminBtn a:hover {
+  color: #0c3b5a;
 }
 
 .info {

@@ -1,6 +1,7 @@
 import React from 'react'
 import logoCompleto from '../assets/img/logo_completo.png'
 import { Link } from 'react-router-dom'
+import '../App.css'
 
 const Navbar = () => {
   return (
@@ -13,10 +14,9 @@ const Navbar = () => {
         <nav className="navbar">
             <ul>
                 <li className="listItem"><Link to="/">Home</Link></li>
-                <li className="listItem"><Link to="/tipoAlojamiento">Administrar tipos</Link></li>
                 <li className="listItem"><Link to="/nosotros">Nosotros</Link></li>
                 <li className="listItem"><Link to="/contacto">Contacto</Link></li>
-                {/* <li className="listItem"><Link to="/nuevo-alojamiento">Nuevo alojamiento</Link></li> */}
+                <li className="listItem adminBtn"><Link to="/tipoAlojamiento">Administrar</Link></li>
             </ul>
         </nav>
     </header>
