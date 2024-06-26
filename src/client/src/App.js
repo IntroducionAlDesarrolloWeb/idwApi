@@ -15,14 +15,16 @@ function App() {
     <Router>
       <div className='App'>
         <Navbar/>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/contacto" element={<Contacto />} />
-          <Route path="/nosotros" element={<Nosotros />} />
-          <Route path="/busqueda" element={<Busqueda />} />
-          <Route path = "/tipoAlojamiento" element = {<AddTipoAlojamiento />} />
-          {/* <Route path = "/nuevo-alojamiento" element = {<AddAlojamiento />} /> */}
-        </Routes>
+        <div style={{flex:1}}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/contacto" element={<Contacto />} />
+            <Route path="/nosotros" element={<Nosotros />} />
+            <Route path="/busqueda" element={<Busqueda />} />
+            <Route path = "/tipoAlojamiento" element = {<AddTipoAlojamiento />} />
+            {/* <Route path = "/nuevo-alojamiento" element = {<AddAlojamiento />} /> */}
+          </Routes>
+        </div>
         <Footer/>
       </div>
     </Router>
