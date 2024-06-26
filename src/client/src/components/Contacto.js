@@ -1,12 +1,7 @@
 import React, { useState } from 'react'
 import { Form, Button, Container, Row, Col } from 'react-bootstrap';
 import { FaWhatsapp, FaEnvelope, FaInstagram, FaTwitter } from 'react-icons/fa';
-
-import correo from '../assets/img/correo.png'
-import telefono from '../assets/img/telefono.png'
-import instagram from '../assets/img/instagram.png'
-import facebook from '../assets/img/facebook.png'
-import x from '../assets/img/x.png'
+import '../App.css'
 
 const Contacto = () => {
     const [formData, setFormData] = useState({
@@ -73,8 +68,8 @@ const Contacto = () => {
                 />
                 </Form.Group>
 
-                <Button variant="secondary" type="submit" style={{width:'100%', marginTop:'10px'}}>
-                Submit
+                <Button variant="primary" type="submit" className='contactBtn'>
+                ENVIAR
                 </Button>
             </Form>
             </Col>
