@@ -9,6 +9,7 @@ import Nosotros from './components/Nosotros';
 import AddAlojamiento from './components/AddAlojamiento';
 import AddTipoAlojamiento from './components/AddTipoAlojamiento';
 import Busqueda from './components/Busqueda';
+import Admin from './components/Admin';
 
 function App() {
   return (
@@ -21,8 +22,9 @@ function App() {
             <Route path="/contacto" element={<Contacto />} />
             <Route path="/nosotros" element={<Nosotros />} />
             <Route path="/busqueda" element={<Busqueda />} />
-            <Route path = "/tipoAlojamiento" element = {<AddTipoAlojamiento />} />
-            {/* <Route path = "/nuevo-alojamiento" element = {<AddAlojamiento />} /> */}
+            <Route path="/admin" element={<Admin />} />
+            <Route path = "/addTipoAlojamiento" element = {<AddTipoAlojamiento />} />
+            <Route path = "/addAlojamiento" element = {<AddAlojamiento />} />
           </Routes>
         </div>
         <Footer/>
