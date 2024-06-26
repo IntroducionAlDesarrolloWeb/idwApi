@@ -174,7 +174,7 @@ footer {
   margin-right: 10px;
 }
 
-.contactBtn {
+.submitBtn {
   width: 100%;
   margin-top: 10px;
   background-color: #1A84CB;
@@ -253,5 +253,3 @@ footer {
 .typeImg:hover {
   text-decoration: none; 
 }
-
-/* CREAR ALOJAMIENTO */
