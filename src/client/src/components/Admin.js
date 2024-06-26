@@ -131,8 +131,8 @@ const Admin = () => {
   return (
     <Container className="mt-5 mx-auto" style={{maxWidth:'90%'}}>
         <Row className='mb-4'>
-            <button type="button" className='btn btn-secondary mr-3' id="crearTipoBtn" onClick={()=>navigate('/addTipoAlojamiento')}>Crear tipo de alojamiento</button>
             <button type="button" className='btn btn-secondary ' id="crearAlojamientoBtn" onClick={()=>navigate('/addAlojamiento')}>Crear alojamiento</button>
+            <button type="button" className='btn btn-secondary mr-3' id="crearTipoBtn" onClick={()=>navigate('/addTipoAlojamiento')}>Crear tipo de alojamiento</button>
         </Row>
         <Row>
             <Table responsive striped bordered hover>
@@ -150,9 +150,6 @@ const Admin = () => {
                     <th>Baños</th>
                     <th>Estado</th>
                     <th></th>
-                {/* {Array.from({ length: 12 }).map((_, index) => (
-                    <th key={index}>Table heading</th>
-                ))} */}
                 </tr>
             </thead>
             <tbody>
@@ -176,14 +173,6 @@ const Admin = () => {
                         </td>
                     </tr>
                 ))}
-                
-                   
-                {/* <tr>
-                <td>3</td>
-                {Array.from({ length: 12 }).map((_, index) => (
-                    <td key={index}>Table cell {index}</td>
-                ))}
-                </tr> */}
             </tbody>
             </Table>
         </Row>
