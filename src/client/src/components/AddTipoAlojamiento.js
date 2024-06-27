@@ -69,7 +69,7 @@ import Modal from 'react-bootstrap/Modal';
             if(response.ok){
                 const data = await response.json()
                 setTiposAlojamiento(data)
-            }else{
+            } else{
                 alert("Error al crear el tipo de alojamiento.");
             }
         } catch (error) {

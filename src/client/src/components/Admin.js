@@ -131,8 +131,9 @@ const Admin = () => {
   return (
     <Container className="mt-5 mx-auto" style={{maxWidth:'90%'}}>
         <Row className='mb-4'>
-            <button type="button" className='btn btn-secondary ' id="crearAlojamientoBtn" onClick={()=>navigate('/addAlojamiento')}>Crear alojamiento</button>
+            <button type="button" className='btn btn-primary mr-3' id="crearAlojamientoBtn" onClick={()=>navigate('/addAlojamiento')}>Crear alojamiento</button>
             <button type="button" className='btn btn-secondary mr-3' id="crearTipoBtn" onClick={()=>navigate('/addTipoAlojamiento')}>Crear tipo de alojamiento</button>
+            <button type="button" className='btn btn-secondary' id="crearTipoBtn" onClick={()=>navigate('/addServicio')}>Crear Servicio</button>
         </Row>
         <Row>
             <Table responsive striped bordered hover>
