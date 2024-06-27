@@ -9,20 +9,30 @@ import Nosotros from './components/Nosotros';
 import AddAlojamiento from './components/AddAlojamiento';
 import AddTipoAlojamiento from './components/AddTipoAlojamiento';
 import Busqueda from './components/Busqueda';
+import Admin from './components/Admin';
+import AddServicio from './components/AddServicio';
+import AddAlojamientoServicios from './components/AddAlojamientoServicios';
+import AddImagen from './components/AddImagen';
 
 function App() {
   return (
     <Router>
       <div className='App'>
         <Navbar/>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/contacto" element={<Contacto />} />
-          <Route path="/nosotros" element={<Nosotros />} />
-          <Route path="/busqueda" element={<Busqueda />} />
-          <Route path = "/tipoAlojamiento" element = {<AddTipoAlojamiento />} />
-          {/* <Route path = "/nuevo-alojamiento" element = {<AddAlojamiento />} /> */}
-        </Routes>
+        <div style={{flex:1}}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/contacto" element={<Contacto />} />
+            <Route path="/nosotros" element={<Nosotros />} />
+            <Route path="/busqueda" element={<Busqueda />} />
+            <Route path="/admin" element={<Admin />} />
+            <Route path = "/addTipoAlojamiento" element = {<AddTipoAlojamiento />} />
+            <Route path = "/addAlojamiento" element = {<AddAlojamiento />} />
+            <Route path = "/addServicio" element = {<AddServicio />} />
+            <Route path = "/addAlojamientoServicio" element = {<AddAlojamientoServicios />} />
+            <Route path = "/addImagen" element = {<AddImagen />} />
+          </Routes>
+        </div>
         <Footer/>
       </div>
     </Router>
