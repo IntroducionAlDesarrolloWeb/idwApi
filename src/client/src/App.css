@@ -114,7 +114,7 @@ footer {
   flex-shrink: 0;
 }
 
-.AddTipoAlojamientoForm, .AddServicioForm {
+.AddTipoAlojamientoForm, .AddServicioForm, .AddAlojamientoServicioForm {
   display: flex;
   flex-direction: column;
   align-items: center;

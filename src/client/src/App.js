@@ -11,6 +11,7 @@ import AddTipoAlojamiento from './components/AddTipoAlojamiento';
 import Busqueda from './components/Busqueda';
 import Admin from './components/Admin';
 import AddServicio from './components/AddServicio';
+import AddAlojamientoServicios from './components/AddAlojamientoServicios';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path = "/addTipoAlojamiento" element = {<AddTipoAlojamiento />} />
             <Route path = "/addAlojamiento" element = {<AddAlojamiento />} />
             <Route path = "/addServicio" element = {<AddServicio />} />
+            <Route path = "/addAlojamientoServicio" element = {<AddAlojamientoServicios />} />
           </Routes>
         </div>
         <Footer/>

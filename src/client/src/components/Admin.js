@@ -108,7 +108,6 @@ const Admin = () => {
 
     const editarAlojamiento = async (id) => {
         try{
-            console.log(formData)
             const response = await fetch(`http://localhost:3001/alojamiento/putAlojamiento/${id}`, {
                 method: "PUT",
                 headers: {
@@ -133,7 +132,8 @@ const Admin = () => {
         <Row className='mb-4'>
             <button type="button" className='btn btn-primary mr-3' id="crearAlojamientoBtn" onClick={()=>navigate('/addAlojamiento')}>Crear alojamiento</button>
             <button type="button" className='btn btn-secondary mr-3' id="crearTipoBtn" onClick={()=>navigate('/addTipoAlojamiento')}>Crear tipo de alojamiento</button>
-            <button type="button" className='btn btn-secondary' id="crearTipoBtn" onClick={()=>navigate('/addServicio')}>Crear Servicio</button>
+            <button type="button" className='btn btn-secondary mr-3' id="crearTipoBtn" onClick={()=>navigate('/addServicio')}>Crear Servicio</button>
+            <button type="button" className='btn btn-secondary' id="crearTipoBtn" onClick={()=>navigate('/addAlojamientoServicio')}>Vincular Servicio a Alojamiento</button>
         </Row>
         <Row>
             <Table responsive striped bordered hover>
