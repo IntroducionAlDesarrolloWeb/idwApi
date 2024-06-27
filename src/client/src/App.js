@@ -12,6 +12,7 @@ import Busqueda from './components/Busqueda';
 import Admin from './components/Admin';
 import AddServicio from './components/AddServicio';
 import AddAlojamientoServicios from './components/AddAlojamientoServicios';
+import AddImagen from './components/AddImagen';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
             <Route path = "/addAlojamiento" element = {<AddAlojamiento />} />
             <Route path = "/addServicio" element = {<AddServicio />} />
             <Route path = "/addAlojamientoServicio" element = {<AddAlojamientoServicios />} />
+            <Route path = "/addImagen" element = {<AddImagen />} />
           </Routes>
         </div>
         <Footer/>
